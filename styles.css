@@ -1,0 +1,125 @@
+:root {
+  color: #17212b;
+  background: #f4f7f8;
+  font-family: "Segoe UI", sans-serif;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.site-header {
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid #dce4e8;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem max(5vw, 1.25rem);
+}
+
+.brand {
+  color: #125b55;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 1.25rem;
+}
+
+a {
+  color: #125b55;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 980px;
+  padding: 3rem 1.25rem;
+}
+
+.hero {
+  background: #dff2ed;
+  border-radius: 1rem;
+  padding: clamp(2rem, 7vw, 5rem);
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin: 0.4rem 0 1rem;
+  max-width: 650px;
+}
+
+.hero p:not(.eyebrow) {
+  max-width: 560px;
+}
+
+.eyebrow {
+  color: #125b55;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.button {
+  background: #125b55;
+  border: 0;
+  border-radius: 0.4rem;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font: inherit;
+  margin-top: 0.75rem;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+}
+
+.content-section {
+  padding-bottom: 1rem;
+}
+
+.cards {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-top: 1.25rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #dce4e8;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+}
+
+.contact form {
+  display: grid;
+  gap: 0.6rem;
+  max-width: 520px;
+}
+
+input,
+textarea {
+  border: 1px solid #9aaab2;
+  border-radius: 0.35rem;
+  font: inherit;
+  padding: 0.65rem;
+  width: 100%;
+}
+
+footer {
+  border-top: 1px solid #dce4e8;
+  color: #52616a;
+  padding: 1rem max(5vw, 1.25rem);
+}

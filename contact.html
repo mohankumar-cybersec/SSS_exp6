@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact | AppSec Demo Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">AppSec Demo Shop</a>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="catalog.html">Catalog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main class="content-section contact">
+      <p class="eyebrow">Contact</p>
+      <h1>Send a demo message</h1>
+      <p>This mock form runs only in your browser. It does not send or store your information.</p>
+      <form id="contact-form">
+        <label for="name">Name</label>
+        <input id="name" name="name" autocomplete="name" required>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button class="button" type="submit">Submit demo form</button>
+      </form>
+      <p id="form-status" role="status" aria-live="polite"></p>
+    </main>
+    <footer><p>Mock application for a local GitHub Actions security lab.</p></footer>
+  </body>
+</html>
